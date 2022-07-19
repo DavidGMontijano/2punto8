@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../recursos/favicon-logo-leo-16x16.png" type="image/x-icon">
+    <!-- fuente de google para titulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--  fuente para parrafos y textos-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>2punto8 - Contactos</title>
+</head>
+<body>
+    <header> 
+        <nav class="header__nav"> <!--barras de navegacion con sus respectivos enlaces -->
+            <img src="../recursos/favicon-logo-leo.ico"alt="logo 2punto8">
+            <ul class="header__lista">
+                <li class="header__item"> <a href="../index.html"> Inicio </a></li>
+                <li class="header__item"> <a href="#"> contactos </a></li>
+                <li class="header__item"> <a href="galeria.html"> galeria </a></li>
+                <li class="header__item"> <a href="productos.html"> productos </a></li>
+                <li class="header__item"> <a href="sobre-nosotros.html"> sobre-nosotros </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <section class="contacto__imagen">                       <!--  pasos a seguir para ayudar al cliente  -->
+            <h1 class="titulo__principal--contacto">Contactos</h1>  
+        </section>
+        <section class="contacto__pasos">
+            <h2 class="contacto__subtitulo">Segui estos pasos faciles</h2>
+            <ol class="contacto__lista">
+                <li class="contacto__item">Si no lo hiciste aun, mira nuestra galeria, asi tenes una idea de lo que buscas.</li>
+                <li class="contacto__item">Si es un evento, especificanos cual es.</li>
+                <li class="contacto__item">Elegi el formato, en el que vas a queres tus imagenes, mirando estos  productos</li>
+                <li class="contacto__item">Comunicate con nosotros</li>
+            </ol>
+        </section>
+        <section>
+            <h2 class="titulo__formulario"> Completa este formulario para que podamos ayudarte aun mas</h2>
+            <form method="post" class="form__casillas">                                  <!--  formulario -->
+                <div> 
+                    <label class="label__item">Agregar informacion</label>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <label class="label__item" >Nombre</label>
+                    <input>
+                </div>
+                <div>
+                    <label class="label__item">Email</label>
+                    <input>
+                </div>
+                <div>
+                    <input type="checkbox" name="casamiento" value="presupuesto de casamiento">
+                    <label class="label__item">Casamiento</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="bebes" value="presupuesto de fotos de bebes">
+                    <label class="label__item">Bebes</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="exteriores" value="presupuesto de exteriores">
+                    <label class="label__item">Exteriores 15</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="pre_boda" value="presupuesto de pre boda">
+                    <label class="label__item">Pre boda</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="15_años" value="presupuesto de 15 años">
+                    <label class="label__item">15 años</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="futuras_mamas" value="presupuesto de futuras mamas">
+                    <label class="label__item">Futuras mamas</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="princesas" value="presupuesto de princesas">
+                    <label class="label__item">Princesas</label>
+                </div>
+                    <select name="producto" >
+                        <option value="fotos individuales" >fotos individuales</option>
+                        <option value="foto libro">foto libro</option>
+                    </select>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div >
+            <img  class="footer__logo" src="../recursos/logo-leo-paint.png" alt="logo 2punto8">
+        </div>
+        <div class="footer__titulo" >
+            <h2 class="footer__visita"> Visita nuestras redes </h2>
+        </div>    
+        <span class="footer__derechos"> 2punto8 (c) todos los derechos reservados </span>
+        <div class="footer__sociales" >
+            <a  href="https://www.instagram.com/2punto8_fotografia/"> <img class="footer__redes" src="../recursos/instagraam-logo.jpg" alt="logo instagram"></a>
+            <a  href="https://www.facebook.com/search/top?q=2punto8%20fotografia"><img class="footer__redes" src="../recursos/facebook-icon-50x50-25.jpg" alt="logo facebook"></a>
+            <a  href="www.2puntoocho@gmail.com"> <img class="footer__redes" src="../recursos/gmail.png" alt="logo gmal"></a>
+        </div>
+    </footer>
+</body>
+</html>
