@@ -1,5 +1,5 @@
 <hi>2punto8</h1>
-<p>Este sitio es una pagina profesional de fotografia</p>
+<p>Este sitio es una pagina profesional de fotografia para el curso de desarrollo wed de CoderHouse</p>
 
 <h2>Tecnologias utilizadas</h2>
 <ul>
