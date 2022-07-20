@@ -10,20 +10,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--  fuente para parrafos y textos-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>2punto8 - Galeria</title>
 </head>
 <body>
     <header> 
-        <nav class="header__nav"> <!--barras de navegacion con sus respectivos enlaces -->
-            <img src="../recursos/favicon-logo-leo.ico"alt="logo 2punto8">
-            <ul class="header__lista">
-                <li class="header__item"> <a href="../index.html"> Inicio </a></li>
-                <li class="header__item"> <a href="contactos.html"> contactos </a></li>
-                <li class="header__item"> <a href="#"> galeria </a></li>
-                <li class="header__item"> <a href="productos.html"> productos </a></li>
-                <li class="header__item"> <a href="sobre-nosotros.html"> sobre-nosotros </a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg  header__item ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../recursos/favicon-logo-leo.ico" alt="2punto8"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main> <!-- contenido relacionado a la seccion (pagina) en la que se encuentra -->
@@ -61,5 +85,7 @@
             <a  href="www.2puntoocho@gmail.com"> <img class="footer__redes" src="../recursos/gmail.png" alt="logo gmal"></a>
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
