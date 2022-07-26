@@ -393,10 +393,11 @@ footer{                        /* FOOTER*/
 
 }
 
+
 .footer__logo{
     grid-area: logo-leo;
     display: flex;
-
+    width: 50%;
 
 }
 
@@ -404,10 +405,16 @@ footer{                        /* FOOTER*/
 .footer__sociales{
     grid-area: sociales ;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: flex-start;
     padding-left: 200px;
 
+}
+
+.footer__imagen{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 
@@ -429,87 +436,153 @@ footer{                        /* FOOTER*/
 /* media Querie Celular */
 @media (min-width: 320px) and (max-width: 575px){
 
-}
+    body{                           /* imagen de fondo */
+        font-family: 'Montserrat', sans-serif;
+        background-image: url("../recursos/2PUNTO-8.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 
 
-.portada__imagen{               /* index */
-    display: grid;
-    width: auto;
-    height: 80vh;
-    background-image: url(../recursos/imagen_portada.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    .portada__imagen {               /* index */
+        width: 100vw;
+        height: 80vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-size: cover;
+        background-position: right;
+
+        
+    }
+
+
+    .titulo__bienvenidos .titulo__principal__galeria{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+
+
+    .portada__subtitulo{             /* subtitulo de la foto */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+
+        
+
+    }
+    footer{                        /* FOOTER*/
+
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo-leo"
+                            "derechos"
+                            "titulo"
+                            "sociales" ;
+
+    }
+    .footer__logo{
+        grid-area: logo-leo;
+    }
+
+
+    .footer__derechos{
+        grid-area: derechos;
+        display: flex;
+        align-items: flex-start;
+        font-size: 20px;
+        text-align: center;
+        padding: 16px;
+
+    }
+
+    .footer__imagen{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+
+
+    }
+
+    .footer__logo{
+        width: 20%;
+    }
+
+
+    .footer__titulo{
+        grid-area: titulo;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+    }
+
+    .footer__sociales{
+        grid-area: sociales ;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer__redes{
+        width: 30px;
     
-}
+    }
 
+    .contacto__imagen{
+        width: 100vw;
+        height: 80vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-size: cover;
+        background-position: right;
+    }
 
-.titulo__bienvenidos{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    text-shadow: 1px 2px 3px white;
-}
+    .titulo__principal--contacto{       /* CONTACTOS */
 
+        font-size: 30px;
+        grid-column: 1/2;
+        grid-row: 1/2;
 
-.portada__subtitulo{             /* subtitulo de la foto */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin: 20 20 5 20; 
-    font-size: 20px;
+    }
     
+    .contacto__subtitulo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
 
-}
-footer{                        /* FOOTER*/
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "logo-leo"
-                        "derechos"
-                        "titulo"
-                        "sociales" ;
+    .galeria__imagen{               /* Galeria */
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        background-position: right;
 
-}
+    }
 
 
-.footer__derechos{
-    grid-area: derechos;
-    display: flex;
-    align-items: flex-start;
-    font-size: 20px;
-    text-align: center;
-    padding: 16px;
+    .titulo__principal__galeria{
+        grid-column: 1/2;
+        grid-row: 1/2;
 
-}
-
-.footer__logo{
-    width: 20%;
-    grid-area: logo-leo;
-    display: flex;
+    }
+    .galeria__items  a{
+        font-size: 30px;
+    }
 
 
 }
-
-
-.footer__sociales{
-    grid-area: sociales ;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 200px;
-
-}
-
-
-
 
 
 /*  media Querie de tablet */
