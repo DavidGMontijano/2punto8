@@ -1,0 +1,63 @@
+footer{                        /* FOOTER*/
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo-leo titulo"
+                        "derechos sociales";
+        .footer{
+            &__derechos{
+                grid-area: derechos;
+                display: flex;
+                align-items: flex-start;
+                font-size: 20px;
+                text-align: center;
+                padding: 16px;
+            
+            }
+            
+            
+            &__logo{
+                grid-area: logo-leo;
+                display: flex;
+                width: 50%;
+            
+            }
+            
+            
+            &__sociales{
+                grid-area: sociales ;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 200px;
+            
+            }
+            
+            &__imagen{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+            
+            
+            
+            &__titulo{
+                grid-area: titulo;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-left: 200px;
+            }
+            
+            
+            &__redes{
+                width: 60px;
+            
+            }
+    }
+
+}

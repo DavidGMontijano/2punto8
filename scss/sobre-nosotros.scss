@@ -1,0 +1,29 @@
+.imagen__principal--nosotros{    /* seccion Sobr Nosotros */
+    display: grid;
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../recursos/quienes_somos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.titulo__principal--nosotros{
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    text-decoration:underline; 
+    font-size: 40px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-shadow: 1px 2px 1px white;
+}
+
+.nosotros__presentacion{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 20px;
+}

@@ -1,56 +1,10 @@
-* {
-  margin: 0px;
-  padding: 0px; }
-
-.titulo__principal {
-  font-family: 'Kanit', sans-serif;
-  text-decoration: underline;
-  text-align: center;
-  font-size: 40px; }
-
-body {
-  /* imagen de fondo */
-  font-family: 'Montserrat', sans-serif;
-  background-image: url("../recursos/2PUNTO-8.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-
+/* color principal */
+/* Fuentes */
 .header__item {
   /*lista de navegacion  */
   display: inline;
   font-family: 'Kanit', sans-serif;
   flex-wrap: wrap; }
-
-.portada__imagen {
-  /* index */
-  display: grid;
-  width: 100vw;
-  height: 80vh;
-  background-image: url(../recursos/imagen_portada.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr; }
-  .portada__imagen .titulo__bienvenidos {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-shadow: 1px 2px 3px white; }
-  .portada__imagen .portada__subtitulo {
-    /* subtitulo de la foto */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    grid-column: 1/4;
-    grid-row: 2/3;
-    margin: 20 20 5 20;
-    text-shadow: 1px 2px 1px white;
-    font-size: 26px; }
-  .portada__imagen .portada__parrafo {
-    font-size: 20px;
-    padding: 16px; }
 
 .contacto__imagen {
   /* CONTACTOS */
@@ -73,13 +27,6 @@ body {
     grid-row: 1/2;
     text-shadow: 1px 2px 3px white; }
 
-.contacto__subtitulo {
-  text-align: center;
-  font-family: 'Kanit', sans-serif; }
-
-.contacto__lista {
-  display: flex; }
-
 .contacto__item {
   justify-content: center;
   flex-wrap: wrap;
@@ -97,24 +44,12 @@ body {
   background: linear-gradient(to top, black, grey, #a19f9f);
   text-align: center;
   transition: .3s; }
-
-.contacto__boton:hover {
-  width: 300px;
-  height: 40px; }
+  .contacto__boton:hover {
+    width: 300px;
+    height: 40px; }
 
 .contacto__form {
   font-size: 25px; }
-
-.titulo__principal--galeria {
-  /* GALERIA */
-  display: flex;
-  justify-content: center;
-  font-family: 'Kanit', sans-serif;
-  text-decoration: underline;
-  font-size: 40px;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  text-shadow: 1px 2px 3px white; }
 
 .galeria__subtitulo {
   text-align: center; }
@@ -129,12 +64,23 @@ body {
   background-repeat: no-repeat;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr; }
+  .galeria__imagen .titulo__principal--galeria {
+    /* GALERIA */
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: underline;
+    font-size: 40px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-shadow: 1px 2px 3px white; }
 
 .galeria__enlaces {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  list-style: none; }
 
 .galeria__items a {
   /* enlaces fotos GALERIA */
@@ -265,7 +211,7 @@ footer {
     justify-content: center;
     align-items: flex-start;
     padding-left: 200px; }
-  footer .footer .footer__imagen {
+  footer .footer__imagen {
     display: flex;
     justify-content: center;
     align-items: flex-end; }
@@ -277,6 +223,54 @@ footer {
     padding-left: 200px; }
   footer .footer__redes {
     width: 60px; }
+
+body {
+  /* imagen de fondo */
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("../recursos/2PUNTO-8.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.titulo__principal {
+  font-family: 'Kanit', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 40px; }
+
+.portada__imagen {
+  /* index */
+  display: grid;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../recursos/imagen_portada.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .portada__imagen .titulo__bienvenidos {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-shadow: 1px 2px 3px white; }
+  .portada__imagen .portada__subtitulo {
+    /* subtitulo de la foto */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    margin: 20 20 5 20;
+    text-shadow: 1px 2px 1px white;
+    font-size: 26px; }
+  .portada__imagen .portada__parrafo {
+    font-size: 20px;
+    padding: 16px; }
 
 /* media Querie Celular */
 @media (min-width: 320px) and (max-width: 575px) {

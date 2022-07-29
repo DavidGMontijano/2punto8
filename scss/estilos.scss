@@ -1,3 +1,13 @@
+@import "variables";
+@import "navegacion";
+@import "contactos";
+@import "galeria";
+@import "productos";
+@import "sobre-nosotros";
+@import "footer";
+@import "body";
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,31 +21,6 @@
     font-size: 40px;
 
 }
-
-
-body{                           /* imagen de fondo */
-
-    font-family: 'Montserrat', sans-serif;
-    background-image: url("../recursos/2PUNTO-8.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-
-.header__item {      /*lista de navegacion  */
-
-    display: inline;
-    font-family: 'Kanit', sans-serif;
-    flex-wrap: wrap;
-
-}
-
-
-
-
 
 
 .portada__imagen{               /* index */
@@ -55,7 +40,6 @@ body{                           /* imagen de fondo */
         text-shadow: 1px 2px 3px white;
     }
     
-    
     .portada__subtitulo{             /* subtitulo de la foto */
         display: flex;
         justify-content: center;
@@ -69,7 +53,6 @@ body{                           /* imagen de fondo */
     
     }
     
-    
     .portada__parrafo {
         font-size: 20px;
         padding: 16px
@@ -78,320 +61,24 @@ body{                           /* imagen de fondo */
 }
 
 
-.contacto__imagen{    /* CONTACTOS */
-    display: grid;
-    width: 100vw;
-    height: 80vh;
-    background-image: url(../recursos/imagencontacto.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    .titulo__principal--contacto{     
-        display: flex;
-        justify-content: center;
-        font-family: 'Kanit', sans-serif;
-        text-decoration:underline; 
-        font-size: 40px;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        text-shadow: 1px 2px 3px white;
-    }
-}
 
 
 
 
 
-.contacto__subtitulo{
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-}
 
 
 
 
-.contacto__lista{
-    display: flex;
 
-}
 
 
-.contacto__item { 
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 25px;
-    margin: 30px;
-    padding: 20px; 
-}
 
 
-.contacto__boton{
-    width: 200px;
-    height: 35px;
-    border: red solid 1px;
-    color: white;
-    border-radius: 8px;
-    background: black;
-    background: linear-gradient(to top, black, grey , rgb(161, 159, 159) ) ;
-    text-align: center;
-    transition: .3s;
 
-}
-.contacto__boton:hover{
-    width: 300px;
-    height: 40px;
-}
 
-.contacto__form{
-    font-size: 25px;
-}
 
 
-
-.titulo__principal--galeria{            /* GALERIA */
-    display: flex;
-    justify-content: center;
-    font-family: 'Kanit', sans-serif;
-    text-decoration:underline; 
-    font-size: 40px;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-shadow: 1px 2px 3px white;
-}
-
-
-.galeria__subtitulo{
-    text-align: center;
-}
-
-
-.galeria__imagen{
-    display: grid;
-    width: 100vw;
-    height: 80vh;
-    background-image: url(../recursos/imagen-galeria.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.galeria__enlaces{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-.galeria__items  a {      /* enlaces fotos GALERIA */
-    padding: 15px;
-    font-family: 'Kanit', sans-serif;
-    color: rgb(223, 145, 145);
-    text-decoration: underline;
-    font-size: 50px;
-
-}   
-
-
-.galeria__foto{
-    width: 30%;
-
-    filter: saturate(0);
-    transition: .3s;
-
-
-}
-
-.galeria__enlaces img:hover{
-    filter: saturate(100%);
-    width: 50%;
-}
-
-
-
-
-.producto__principal{       /* seccion productos  */ /* imagen principal */
-    display: grid;
-    height: 80vh;
-    background-image: url(../recursos/imagen_producto.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    .titulo__principal--producto{    
-        display: flex;
-        justify-content: center;
-        font-family: 'Kanit', sans-serif;
-        text-decoration:underline; 
-        font-size: 40px;
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-}
-
-
-
-
-
-
-.producto__contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 100px;
-    margin: 50px;
-}
-
-
-
-.producto__tarjetas{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: black solid 3px;
-    border-radius: 50px;
-    padding: 15px;
-}
-
-
-.producto__item{
-    width: 30%;
-    object-fit: cover;
-}
-
-.item__uno{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-
-
-
-
-
-.boton__producto{
-    width: 200px;
-    height: 20px;
-    border: red solid 1px;
-    color: white;
-    border-radius: 8px;
-    background: black;
-    background: linear-gradient(to top, black, grey , rgb(161, 159, 159) ) ;
-    transition: .3s;
-
-    &:hover{
-        width: 300px;
-        height: 40px;
-    }
-}
-
-
-
-
-.imagen__principal--nosotros{    /* seccion Sobr Nosotros */
-    display: grid;
-    width: 100vw;
-    height: 80vh;
-    background-image: url(../recursos/quienes_somos.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.titulo__principal--nosotros{
-    display: flex;
-    justify-content: center;
-    font-family: 'Kanit', sans-serif;
-    text-decoration:underline; 
-    font-size: 40px;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-shadow: 1px 2px 1px white;
-}
-
-.nosotros__presentacion{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    gap: 20px;
-}
-
-
-footer{                        /* FOOTER*/
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "logo-leo titulo"
-                        "derechos sociales";
-        .footer{
-            &__derechos{
-                grid-area: derechos;
-                display: flex;
-                align-items: flex-start;
-                font-size: 20px;
-                text-align: center;
-                padding: 16px;
-            
-            }
-            
-            
-            &__logo{
-                grid-area: logo-leo;
-                display: flex;
-                width: 50%;
-            
-            }
-            
-            
-            &__sociales{
-                grid-area: sociales ;
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                padding-left: 200px;
-            
-            }
-            
-            .footer__imagen{
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-            }
-            
-            
-            
-            &__titulo{
-                grid-area: titulo;
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                padding-left: 200px;
-            }
-            
-            
-            &__redes{
-                width: 60px;
-            
-            }
-    }
-
-}
 
 
 

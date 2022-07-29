@@ -1,0 +1,64 @@
+.contacto__imagen{    /* CONTACTOS */
+    display: grid;
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../recursos/imagencontacto.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .titulo__principal--contacto{     
+        display: flex;
+        justify-content: center;
+        font-family: 'Kanit', sans-serif;
+        text-decoration:underline; 
+        font-size: 40px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-shadow: 1px 2px 3px white;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+.contacto__item { 
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    margin: 30px;
+    padding: 20px; 
+}
+
+
+
+.contacto__boton{
+    width: 200px;
+    height: 35px;
+    border: red solid 1px;
+    color: white;
+    border-radius: 8px;
+    background: black;
+    background: linear-gradient(to top, black, grey , rgb(161, 159, 159) ) ;
+    text-align: center;
+    transition: .3s;
+    
+    &:hover{
+        width: 300px;
+        height: 40px;
+    }
+
+}
+
+
+.contacto__form{
+    font-size: 25px;
+}
