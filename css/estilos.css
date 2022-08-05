@@ -1,5 +1,7 @@
+@charset "UTF-8";
 /* color principal */
 /* Fuentes */
+/* TAMAÑOS DE LETRA */
 .header__item {
   /*lista de navegacion  */
   display: inline;
@@ -11,21 +13,13 @@
   display: grid;
   width: 100vw;
   height: 80vh;
-  background-image: url(../recursos/imagencontacto.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+  background-image: url(../recursos/imagencontacto.png); }
   .contacto__imagen .titulo__principal--contacto {
     display: flex;
     justify-content: center;
     font-family: 'Kanit', sans-serif;
     text-decoration: underline;
-    font-size: 40px;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-shadow: 1px 2px 3px white; }
+    font-size: 40px; }
 
 .contacto__item {
   justify-content: center;
@@ -58,22 +52,14 @@
   display: grid;
   width: 100vw;
   height: 80vh;
-  background-image: url(../recursos/imagen-galeria.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+  background-image: url(../recursos/imagen-galeria.png); }
   .galeria__imagen .titulo__principal--galeria {
     /* GALERIA */
     display: flex;
     justify-content: center;
     font-family: 'Kanit', sans-serif;
     text-decoration: underline;
-    font-size: 40px;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-shadow: 1px 2px 3px white; }
+    font-size: 40px; }
 
 .galeria__enlaces {
   display: flex;
@@ -104,20 +90,13 @@
   /* imagen principal */
   display: grid;
   height: 80vh;
-  background-image: url(../recursos/imagen_producto.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+  background-image: url(../recursos/imagen_producto.jpg); }
   .producto__principal .titulo__principal--producto {
     display: flex;
     justify-content: center;
     font-family: 'Kanit', sans-serif;
     text-decoration: underline;
-    font-size: 40px;
-    grid-column: 2/3;
-    grid-row: 1/2; }
+    font-size: 40px; }
 
 .producto__contenedor {
   display: grid;
@@ -161,22 +140,14 @@
   display: grid;
   width: 100vw;
   height: 80vh;
-  background-image: url(../recursos/quienes_somos.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+  background-image: url(../recursos/quienes_somos.jpg); }
 
 .titulo__principal--nosotros {
   display: flex;
   justify-content: center;
   font-family: 'Kanit', sans-serif;
   text-decoration: underline;
-  font-size: 40px;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  text-shadow: 1px 2px 1px white; }
+  font-size: 40px; }
 
 .nosotros__presentacion {
   display: flex;
@@ -228,10 +199,22 @@ body {
   /* imagen de fondo */
   font-family: 'Montserrat', sans-serif;
   background-image: url("../recursos/2PUNTO-8.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed; }
+
+/*  EXTEND  */
+.background-centrado, .contacto__imagen, .galeria__imagen, .producto__principal, .imagen__principal--nosotros, body, .portada__imagen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.grid-titulo, .contacto__imagen .titulo__principal--contacto, .galeria__imagen .titulo__principal--galeria, .producto__principal .titulo__principal--producto, .titulo__principal--nosotros {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-shadow: 1px 2px 3px white; }
+
+.grid-imagen_principal, .contacto__imagen, .galeria__imagen, .producto__principal, .imagen__principal--nosotros, .portada__imagen {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr; }
 
 * {
   margin: 0px;
@@ -248,12 +231,7 @@ body {
   display: grid;
   width: 100vw;
   height: 80vh;
-  background-image: url(../recursos/imagen_portada.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+  background-image: url(../recursos/imagen_portada.png); }
   .portada__imagen .titulo__bienvenidos {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -269,7 +247,7 @@ body {
     text-shadow: 1px 2px 1px white;
     font-size: 26px; }
   .portada__imagen .portada__parrafo {
-    font-size: 20px;
+    font-size: 30px;
     padding: 16px; }
 
 /* media Querie Celular */

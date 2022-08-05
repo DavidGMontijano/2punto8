@@ -1,23 +1,20 @@
 .contacto__imagen{    /* CONTACTOS */
+    @extend .grid-imagen_principal;
+    @extend .background-centrado;
     display: grid;
     width: 100vw;
     height: 80vh;
     background-image: url(../recursos/imagencontacto.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+
 
     .titulo__principal--contacto{     
+        @extend .grid-titulo;
         display: flex;
         justify-content: center;
         font-family: 'Kanit', sans-serif;
         text-decoration:underline; 
         font-size: 40px;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        text-shadow: 1px 2px 3px white;
+
     }
     
 }
