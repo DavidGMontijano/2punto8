@@ -28,7 +28,7 @@
     @extend .grid-imagen_principal;
     @extend .background-centrado;
     display: grid;
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     background-image: url(../recursos/imagen_portada.png);
     
@@ -51,34 +51,14 @@
     
     }
     
-    .portada__parrafo {
+    .portada__texto {
         font-size: 30px;
-        padding: 16px
+        padding-left: 16px;
+        text-shadow: 1px 2px 1px white;
+
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* media Querie Celular */
@@ -95,20 +75,27 @@
 
 
     .portada__imagen {               /* index */
-        width: 100vw;
-        height: 80vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        background-size: cover;
-        background-position: right;
-
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
         
     }
 
+    .contacto__imagen{              /* contactos */
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        flex-direction: column;
+    }
 
-    .titulo__bienvenidos .titulo__principal__galeria{
-        grid-column: 1/2;
+
+
+    .titulo__bienvenidos {
+        grid-column: 1;
         grid-row: 1/2;
+        text-align: center;
+
 
     }
 
@@ -116,16 +103,67 @@
     .portada__subtitulo{             /* subtitulo de la foto */
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        text-align: center;
         grid-column: 1/2;
         grid-row: 2/3;
-
-
-        
+        font-size: 16px;
 
     }
-    footer{                        /* FOOTER*/
 
+
+
+
+
+    .titulo__principal--contacto{       /* CONTACTOS */
+
+        font-size: 30px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+
+    .galeria__imagen{               /* Galeria */
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        flex-direction: column;
+
+    }
+
+    }
+    .galeria__items  a{
+        font-size: 30px;
+    }
+
+    .producto__principal{       /* productos */
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        flex-direction: column;
+    }
+    .producto__contenedor{
+        display: flex;
+
+        gap: 100px;
+        margin: 50px;
+    }
+    
+    
+    
+    .producto__tarjetas{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: black solid 3px;
+        border-radius: 50px;
+        padding: 15px;
+        
+    }
+    
+
+
+    footer{                        /* FOOTER*/
         width: 100vw;
         height: 100vh;
         background-color: black;
@@ -187,50 +225,6 @@
     
     }
 
-    .contacto__imagen{
-        width: 100vw;
-        height: 80vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        background-size: cover;
-        background-position: right;
-    }
-
-    .titulo__principal--contacto{       /* CONTACTOS */
-
-        font-size: 30px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-
-    }
-    
-    .contacto__subtitulo{
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .galeria__imagen{               /* Galeria */
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr;
-        background-position: right;
-
-    }
-
-
-    .titulo__principal__galeria{
-        grid-column: 1/2;
-        grid-row: 1/2;
-
-    }
-    .galeria__items  a{
-        font-size: 30px;
-    }
-
-
-}
 
 
 /*  media Querie de tablet */
