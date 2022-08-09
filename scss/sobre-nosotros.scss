@@ -7,18 +7,19 @@
     background-image: url(../recursos/quienes_somos.jpg);
 }
 
-.titulo__principal--nosotros{
-    @extend .grid-titulo;
-    display: flex;
-    justify-content: center;
-    font-family: 'Kanit', sans-serif;
-    text-decoration:underline; 
-    font-size: 40px;
-}
+    .titulo__principal--nosotros{
+        @extend .grid-titulo;
+        display: flex;
+        justify-content: center;
+        font-family: 'Kanit', sans-serif;
+        text-decoration:underline; 
+        font-size: 40px;
+        
+    }
 
-.nosotros__presentacion{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    gap: 20px;
-}
+    .nosotros__presentacion{
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+    }
