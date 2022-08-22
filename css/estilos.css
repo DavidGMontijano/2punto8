@@ -1,117 +1,4 @@
 @charset "UTF-8";
-/* media Querie Celular */
-@media (min-width: 320px) and (max-width: 575px) {
-  body {
-    /* imagen de fondo */
-    font-family: 'Montserrat', sans-serif;
-    background-image: url("../recursos/2PUNTO-8.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; }
-  .portada__imagen {
-    /* index */
-    display: grid;
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; }
-  .titulo__bienvenidos {
-    grid-column: 1;
-    grid-row: 1/2;
-    text-align: center; }
-  .portada__subtitulo {
-    /* subtitulo de la foto index */
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    font-size: 16px; }
-  .contacto__imagen {
-    /* contactos */
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    flex-direction: column; }
-  .titulo__principal--contacto {
-    /* CONTACTOS */
-    font-size: 30px;
-    grid-column: 1/2;
-    grid-row: 1/2; }
-  .galeria__imagen {
-    /* Galeria */
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    flex-direction: column; }
-  .galeria__items a {
-    font-size: 20px; }
-  .producto__principal {
-    /* productos */
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    flex-direction: column; }
-  .producto__contenedor {
-    display: flex;
-    gap: 100px;
-    margin: 50px; }
-  .producto__tarjetas {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: black solid 3px;
-    border-radius: 50px;
-    padding: 15px; }
-  .imagen__principal--nosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; }
-  .titulo__principal--nosotros {
-    font-size: 30px;
-    grid-column: 3/4;
-    grid-row: 2/3; }
-  footer {
-    /* FOOTER*/
-    display: grid;
-    background-color: black;
-    color: white;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "logo-leo" "derechos" "titulo" "sociales"; }
-    footer .footer__logo {
-      grid-area: logo-leo; }
-    footer .footer__derechos {
-      grid-area: derechos;
-      display: flex;
-      align-items: flex-start;
-      font-size: 20px;
-      text-align: center;
-      padding: 16px; }
-    footer .footer__titulo {
-      grid-area: titulo;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      font-size: 20px; }
-    footer .footer__sociales {
-      grid-area: sociales;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 20vw; }
-    footer .footer__imagen {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      width: 40vw; }
-    footer .footer__redes {
-      width: 20vw; } }
-
-/*  media Querie de tablet */
 /* color principal */
 /* Fuentes */
 /* TAMAÑOS DE LETRA */
@@ -185,20 +72,19 @@
 
 .galeria__items a {
   /* enlaces fotos GALERIA */
-  padding: 15px;
   font-family: 'Kanit', sans-serif;
   color: #df9191;
   text-decoration: underline;
   font-size: 50px; }
 
 .galeria__foto {
-  width: 30%;
+  width: 60%;
   filter: saturate(0);
   transition: .3s; }
 
 .galeria__enlaces img:hover {
   filter: saturate(100%);
-  width: 50%; }
+  width: 75%; }
 
 .producto__principal {
   /* seccion productos  */
@@ -292,8 +178,7 @@ footer {
   footer .footer__sociales {
     grid-area: sociales;
     display: flex;
-    /*                 align-items: flex-start;
-                padding-left: 200px; */ }
+    justify-content: center; }
   footer .footer__imagen {
     display: flex;
     justify-content: center;
@@ -303,10 +188,10 @@ footer {
   footer .footer__titulo {
     grid-area: titulo;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: flex-end; }
   footer .footer__redes {
-    width: 60px; }
+    width: 40px; }
 
 body {
   /* imagen de fondo */
@@ -334,7 +219,7 @@ body {
   padding: 0px; }
 
 .titulo__principal {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   text-decoration: underline;
   text-align: center;
   font-size: 40px; }
@@ -360,6 +245,122 @@ body {
     text-shadow: 1px 2px 1px white;
     font-size: 26px; }
   .portada__imagen .portada__texto {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    padding-left: 16px; }
+
+/* media Querie Celular */
+@media (min-width: 320px) and (max-width: 575px) {
+  body {
+    /* imagen de fondo */
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../recursos/2PUNTO-8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  .portada__imagen {
+    /* index */
+    display: grid;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+  .titulo__bienvenidos {
+    grid-column: 1;
+    grid-row: 1/2;
+    text-align: center; }
+  .portada__subtitulo {
+    /* subtitulo de la foto index */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 16px; }
+  .contacto__imagen {
+    /* contactos */
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column; }
+  .titulo__principal--contacto {
+    /* CONTACTOS */
     font-size: 30px;
-    padding-left: 16px;
-    text-shadow: 1px 2px 1px white; }
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .galeria__imagen {
+    /* Galeria */
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column; }
+  .galeria__foto {
+    width: 80%; }
+  .galeria__enlaces img:hover {
+    filter: saturate(100%);
+    width: 95%; }
+  .galeria__items a {
+    font-size: 14vw; }
+  .producto__principal {
+    /* productos */
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column; }
+  .producto__contenedor {
+    display: flex;
+    gap: 100px;
+    margin: 50px; }
+  .producto__tarjetas {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: black solid 3px;
+    border-radius: 50px;
+    padding: 15px; }
+  .imagen__principal--nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+  .titulo__principal--nosotros {
+    font-size: 30px;
+    grid-column: 3/4;
+    grid-row: 2/3; }
+  footer {
+    /* FOOTER*/
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo-leo" "derechos" "titulo" "sociales"; }
+    footer .footer__logo {
+      grid-area: logo-leo;
+      justify-content: center;
+      width: 20vw; }
+    footer .footer__derechos {
+      grid-area: derechos;
+      display: flex;
+      align-items: flex-start;
+      font-size: 20px;
+      text-align: center;
+      padding: 16px; }
+    footer .footer__titulo {
+      grid-area: titulo;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-size: 20px; }
+    footer .footer__sociales {
+      grid-area: sociales;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+    footer .footer__imagen {
+      display: flex;
+      justify-content: center; } }
+
+/*  media Querie de tablet */

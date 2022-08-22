@@ -34,7 +34,6 @@
 
 
 .galeria__items  a {      /* enlaces fotos GALERIA */
-    padding: 15px;
     font-family: 'Kanit', sans-serif;
     color: rgb(223, 145, 145);
     text-decoration: underline;
@@ -44,7 +43,7 @@
 
 
 .galeria__foto{
-    width: 30%;
+    width: 60%;
 
     filter: saturate(0);
     transition: .3s;
@@ -54,5 +53,5 @@
 
 .galeria__enlaces img:hover{
     filter: saturate(100%);
-    width: 50%;
+    width: 75%;
 }

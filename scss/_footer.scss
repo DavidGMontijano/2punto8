@@ -31,8 +31,7 @@ footer{                        /* FOOTER*/
             &__sociales{
                 grid-area: sociales ;
                 display: flex;
-/*                 align-items: flex-start;
-                padding-left: 200px; */
+                justify-content: center;
             
             }
             
@@ -49,14 +48,14 @@ footer{                        /* FOOTER*/
             &__titulo{
                 grid-area: titulo;
                 display: flex;
-                justify-content: start;
+                justify-content: center;
                 align-items: flex-end;
 
             }
             
             
             &__redes{
-                width: 60px;
+                width: 40px;
             
             }
     }

@@ -1,4 +1,4 @@
-@import "media";
+
 @import "variables";
 @import "navegacion";
 @import "contactos";
@@ -19,10 +19,11 @@
 
 .titulo__principal {     
 
-    font-family: 'Kanit', sans-serif;
+    font-family: $font-principal;
     text-decoration:underline; 
     text-align: center;
     font-size: 40px;
+    
 
 }
 
@@ -55,13 +56,15 @@
     }
     
     .portada__texto {
-        font-size: 30px;
+        font-family: $font-secundario;
+        font-size: 50px;
         padding-left: 16px;
-        text-shadow: 1px 2px 1px white;
+
 
     }
     
 }
+    @import "media";
 
 
 
