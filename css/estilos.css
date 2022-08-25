@@ -5,7 +5,7 @@
 .header__item {
   /*lista de navegacion  */
   display: inline;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   flex-wrap: wrap; }
 
 .contacto__imagen {
@@ -19,9 +19,10 @@
     justify-content: center;
     font-family: 'Kanit', sans-serif;
     text-decoration: underline;
-    font-size: 40px; }
-  .contacto__imagen .contacto__subtitulo {
-    text-align: center; }
+    font-size: 48px; }
+
+.contacto__subtitulo {
+  text-align: center; }
 
 .contacto__item {
   justify-content: center;
@@ -61,14 +62,15 @@
     justify-content: center;
     font-family: 'Kanit', sans-serif;
     text-decoration: underline;
-    font-size: 40px; }
+    font-size: 48px; }
 
 .galeria__enlaces {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  list-style: none; }
+  list-style: none;
+  padding-left: 0px; }
 
 .galeria__items a {
   /* enlaces fotos GALERIA */
@@ -79,6 +81,7 @@
 
 .galeria__foto {
   width: 60%;
+  box-shadow: 6px 5px 8px;
   filter: saturate(0);
   transition: .3s; }
 
@@ -116,8 +119,17 @@
   padding: 15px; }
 
 .producto__item {
-  width: 30%;
-  object-fit: cover; }
+  width: 40%;
+  object-fit: cover;
+  box-shadow: 3px 3px 3px;
+  box-shadow: 2px 4px 10px 0px #000;
+  margin-left: 2%;
+  margin-right: 1%;
+  border-radius: 5px;
+  transition: all 2s ease-in-out; }
+
+.producto__item:hover {
+  transform: rotateY(360deg); }
 
 .item__uno {
   grid-column: 1/2;
@@ -125,13 +137,14 @@
 
 .boton__producto {
   width: 200px;
-  height: 20px;
+  height: 30px;
   border: red solid 1px;
   color: white;
   border-radius: 8px;
   background: black;
   background: linear-gradient(to top, black, grey, #a19f9f);
-  transition: .3s; }
+  transition: .3s;
+  box-shadow: 3px 2px 1px #df9191; }
   .boton__producto:hover {
     width: 300px;
     height: 40px; }
@@ -148,7 +161,7 @@
   justify-content: center;
   font-family: 'Kanit', sans-serif;
   text-decoration: underline;
-  font-size: 40px; }
+  font-size: 48px; }
 
 .nosotros__presentacion {
   display: flex;
@@ -197,7 +210,8 @@ body {
   /* imagen de fondo */
   font-family: 'Montserrat', sans-serif;
   background-image: url("../recursos/2PUNTO-8.jpg");
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  overflow-x: hidden; }
 
 /*  EXTEND  */
 .background-centrado, .contacto__imagen, .galeria__imagen, .producto__principal, .imagen__principal--nosotros, body, .portada__imagen {
@@ -219,13 +233,13 @@ body {
   padding: 0px; }
 
 .titulo__principal {
+  /* INDEX */
   font-family: "Kanit", sans-serif;
   text-decoration: underline;
   text-align: center;
-  font-size: 40px; }
+  font-size: 48px; }
 
 .portada__imagen {
-  /* index */
   display: grid;
   width: 100%;
   height: 80vh;
@@ -244,10 +258,14 @@ body {
     margin: 20 20 5 20;
     text-shadow: 1px 2px 1px white;
     font-size: 26px; }
-  .portada__imagen .portada__texto {
-    font-family: "Montserrat", sans-serif;
-    font-size: 50px;
-    padding-left: 16px; }
+
+p {
+  font-size: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: bold; }
 
 /* media Querie Celular */
 @media (min-width: 320px) and (max-width: 575px) {
@@ -284,7 +302,7 @@ body {
     /* contactos */
     display: flex;
     width: 100%;
-    height: 50vh;
+    height: 35vh;
     flex-direction: column; }
   .titulo__principal--contacto {
     /* CONTACTOS */
@@ -295,8 +313,9 @@ body {
     /* Galeria */
     display: flex;
     width: 100%;
-    height: 50vh;
-    flex-direction: column; }
+    height: 36vh;
+    flex-direction: column;
+    object-fit: cover; }
   .galeria__foto {
     width: 80%; }
   .galeria__enlaces img:hover {
@@ -308,12 +327,12 @@ body {
     /* productos */
     display: flex;
     width: 100%;
-    height: 50vh;
+    height: 35vh;
     flex-direction: column; }
   .producto__contenedor {
     display: flex;
-    gap: 100px;
-    margin: 50px; }
+    gap: 50px;
+    flex-direction: column; }
   .producto__tarjetas {
     justify-content: center;
     flex-direction: column;
@@ -321,14 +340,33 @@ body {
     border: black solid 3px;
     border-radius: 50px;
     padding: 15px; }
+  .producto__item {
+    width: 50%; }
+  .boton__producto {
+    width: 150px;
+    height: 25px; }
+    .boton__producto:hover {
+      width: 180px;
+      height: 40px; }
+  .item__uno {
+    height: 80%;
+    object-fit: cover; }
+  .item__dos {
+    height: 80%;
+    object-fit: cover; }
   .imagen__principal--nosotros {
+    /*  sobre nosotros */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; }
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 35vh; }
   .titulo__principal--nosotros {
     font-size: 30px;
-    grid-column: 3/4;
-    grid-row: 2/3; }
+    grid-column: 1/2;
+    grid-row: auto;
+    height: 50px;
+    width: 100%; }
   footer {
     /* FOOTER*/
     display: grid;

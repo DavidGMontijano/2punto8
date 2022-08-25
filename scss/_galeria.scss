@@ -16,7 +16,8 @@
         justify-content: center;
         font-family: 'Kanit', sans-serif;
         text-decoration:underline; 
-        font-size: 40px; 
+        font-size: $titulos; 
+
 
     }
     
@@ -28,6 +29,7 @@
     justify-content: center;
     align-items: center;
     list-style: none;
+    padding-left: 0px;
 }
 
 
@@ -44,6 +46,7 @@
 
 .galeria__foto{
     width: 60%;
+    box-shadow: 6px 5px 8px;
 
     filter: saturate(0);
     transition: .3s;

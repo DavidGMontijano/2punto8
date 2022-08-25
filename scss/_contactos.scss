@@ -13,21 +13,14 @@
         justify-content: center;
         font-family: 'Kanit', sans-serif;
         text-decoration:underline; 
-        font-size: 40px;
+        font-size: $titulos;
 
     }
-    .contacto__subtitulo{
-        text-align: center;
-    }
-    
+
 }
-
-
-
-
-
-
-
+.contacto__subtitulo{
+    text-align: center;
+}
 
 
 .contacto__item { 
