@@ -1,9 +1,10 @@
 body{                           /* imagen de fondo */
     @extend .background-centrado;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
     background-image: url("../recursos/2PUNTO-8.jpg");
     background-attachment: fixed;
-    overflow-x: hidden;
+
 
     
 }
