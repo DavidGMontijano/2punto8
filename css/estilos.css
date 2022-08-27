@@ -171,7 +171,7 @@
 footer {
   /* FOOTER*/
   display: grid;
-  width: 100vw;
+  height: 350px;
   background-color: black;
   color: white;
   grid-template-columns: 1fr  1fr;
@@ -209,7 +209,6 @@ footer {
 body {
   /* imagen de fondo */
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
   background-image: url("../recursos/2PUNTO-8.jpg");
   background-attachment: fixed; }
 
@@ -302,7 +301,7 @@ p {
     /* contactos */
     display: flex;
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     flex-direction: column; }
   .titulo__principal--contacto {
     /* CONTACTOS */
@@ -313,9 +312,8 @@ p {
     /* Galeria */
     display: flex;
     width: 100%;
-    height: 35vh;
-    flex-direction: column;
-    object-fit: cover; }
+    height: 30vh;
+    flex-direction: column; }
   .galeria__foto {
     width: 80%; }
   .galeria__enlaces img:hover {
@@ -327,7 +325,7 @@ p {
     /* productos */
     display: flex;
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     flex-direction: column; }
   .producto__contenedor {
     display: flex;
@@ -360,7 +358,7 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     width: 100%;
-    height: 35vh; }
+    height: 30vh; }
   .titulo__principal--nosotros {
     font-size: 30px;
     grid-column: 1/2;
