@@ -2,7 +2,6 @@
     @extend .grid-imagen_principal;
     @extend .background-centrado;
     display: grid;
-    width: 100vw;
     height: 80vh;
     background-image: url(../recursos/quienes_somos.jpg);
 }

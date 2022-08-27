@@ -8,10 +8,17 @@
   font-family: "Kanit", sans-serif;
   flex-wrap: wrap; }
 
+.nav-link {
+  color: #a00505;
+  transition: 0.6s; }
+  .nav-link:hover {
+    background-color: #ac8585;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px; }
+
 .contacto__imagen {
   /* CONTACTOS */
   display: grid;
-  width: 100vw;
   height: 80vh;
   background-image: url(../recursos/imagencontacto.png); }
   .contacto__imagen .titulo__principal--contacto {
@@ -45,15 +52,38 @@
     width: 300px;
     height: 40px; }
 
-.contacto__form {
-  font-size: 25px; }
+.contacto-form {
+  font-size: 27px;
+  margin-bottom: 25px;
+  color: #df9191;
+  text-shadow: 1px 2px 1px black;
+  font-weight: bold; }
+
+.articulo-form {
+  background-image: url("../recursos/formulario-imagen.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 3px 3px 3px black; }
+
+.contacto__selector {
+  font-weight: bold;
+  box-shadow: 3px 3px 3px black; }
+
+.contacto__check {
+  box-shadow: 3px 3px 3px black; }
+
+.contacto__input {
+  box-shadow: 3px 3px 3px black; }
+
+.imagen__formulario {
+  box-shadow: 3px 3px 3px black; }
 
 .galeria__subtitulo {
   text-align: center; }
 
 .galeria__imagen {
   display: grid;
-  width: 100vw;
   height: 80vh;
   background-image: url(../recursos/imagen-galeria.png); }
   .galeria__imagen .titulo__principal--galeria {
@@ -152,7 +182,6 @@
 .imagen__principal--nosotros {
   /* seccion Sobr Nosotros */
   display: grid;
-  width: 100vw;
   height: 80vh;
   background-image: url(../recursos/quienes_somos.jpg); }
 
@@ -227,6 +256,9 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr; }
 
+.sombreado-formulario {
+  box-shadow: 3px 3px 3px black; }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -254,9 +286,12 @@ body {
     align-items: flex-end;
     grid-column: 1/4;
     grid-row: 2/3;
-    margin: 20 20 5 20;
     text-shadow: 1px 2px 1px white;
-    font-size: 26px; }
+    font-size: 26px;
+    transition: 0.5s; }
+
+.portada__subtitulo:hover {
+  font-weight: bold; }
 
 p {
   font-size: 16px;
@@ -301,8 +336,24 @@ p {
     /* contactos */
     display: flex;
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     flex-direction: column; }
+  .contacto__boton {
+    width: 150px;
+    height: 34px;
+    border: red solid 1px;
+    color: white;
+    border-radius: 8px;
+    background: black;
+    background: linear-gradient(to top, black, grey, #a19f9f); }
+    .contacto__boton:hover {
+      width: 180px;
+      height: 50px; }
+  .contacto__form {
+    font-size: 30px; }
+  .imagen__formulario {
+    margin-bottom: 15px;
+    margin-top: 15px; }
   .titulo__principal--contacto {
     /* CONTACTOS */
     font-size: 30px;
@@ -312,7 +363,7 @@ p {
     /* Galeria */
     display: flex;
     width: 100%;
-    height: 30vh;
+    height: 25vh;
     flex-direction: column; }
   .galeria__foto {
     width: 80%; }
@@ -365,6 +416,38 @@ p {
     grid-row: auto;
     height: 50px;
     width: 100%; }
+  .nosotros__presentacion {
+    overflow: hidden; }
+    .nosotros__presentacion .nosotros__item--uno {
+      object-fit: cover;
+      transition: 3s; }
+    .nosotros__presentacion .nosotros__item--uno:hover {
+      transform: scale(1.8) translate(24%);
+      filter: brightness(100%); }
+    .nosotros__presentacion .nosotros__item--dos {
+      object-fit: cover;
+      transition: 3s; }
+    .nosotros__presentacion .nosotros__item--dos:hover {
+      transform: scale(2.6) translate(35%);
+      filter: brightness(100%); }
+    .nosotros__presentacion .nosotros__item--tres {
+      object-fit: cover;
+      transition: 3s; }
+    .nosotros__presentacion .nosotros__item--tres:hover {
+      transform: scale(1.8) translate(-22%);
+      filter: brightness(100%); }
+    .nosotros__presentacion .nosotros__item--cuatro {
+      object-fit: cover;
+      transition: 3s; }
+    .nosotros__presentacion .nosotros__item--cuatro:hover {
+      transform: scale(2.8) translate(-27%);
+      filter: brightness(100%); }
+    .nosotros__presentacion .nosotros__item--cinco {
+      object-fit: cover;
+      transition: 3s; }
+    .nosotros__presentacion .nosotros__item--cinco:hover {
+      transform: scale(1.8) translatex(26%);
+      filter: brightness(100%); }
   footer {
     /* FOOTER*/
     display: grid;

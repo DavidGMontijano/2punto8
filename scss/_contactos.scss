@@ -2,7 +2,6 @@
     @extend .grid-imagen_principal;
     @extend .background-centrado;
     display: grid;
-    width: 100vw;
     height: 80vh;
     background-image: url(../recursos/imagencontacto.png);
 
@@ -52,7 +51,38 @@
 }
 
 
-.contacto__form{
-    font-size: 25px;
-    
+.contacto-form{
+    font-size: 27px;
+    margin-bottom: 25px;
+    color: rgb(223, 145, 145);
+    text-shadow: 1px 2px 1px black;
+    font-weight: bold;
+
+}
+
+.articulo-form{
+    background-image: url('../recursos/formulario-imagen.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px 3px black;
+}
+
+.contacto__selector{
+    font-weight: bold;
+    box-shadow: 3px 3px 3px black;
+
+
+}
+.contacto__check{
+        box-shadow: 3px 3px 3px black;
+
+
+}
+.contacto__input{
+    box-shadow: 3px 3px 3px black;
+}
+
+.imagen__formulario{
+    box-shadow: 3px 3px 3px black;
 }
