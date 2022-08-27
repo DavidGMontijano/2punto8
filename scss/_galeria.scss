@@ -1,6 +1,4 @@
-.galeria__subtitulo{
-    text-align: center;
-}
+
 
 
 .galeria__imagen{
@@ -13,14 +11,22 @@
         @extend .grid-titulo;
         display: flex;
         justify-content: center;
-        font-family: 'Kanit', sans-serif;
+        font-family: $font-principal;
         text-decoration:underline; 
         font-size: $titulos; 
+    }
+}
 
+
+    .galeria__subtitulo{
+        text-align: center;
+        font-family: $font-secundario;
+        font-weight: $ancho-letra;
+        
 
     }
-    
-}
+
+
 
 .galeria__enlaces{
     display: flex;

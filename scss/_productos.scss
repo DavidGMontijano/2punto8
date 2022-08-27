@@ -35,6 +35,11 @@
     border: black solid 3px;
     border-radius: 50px;
     padding: 15px;
+    background-image: url('../recursos/fondo-productos-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:1px 10px 25px black;
     
 }
 
@@ -42,21 +47,23 @@
 .producto__item{
     width: 40%;
     object-fit: cover;
-    box-shadow: 3px 3px 3px;
-    box-shadow: 2px 4px 10px 0px #000;
+    box-shadow: 2px 4px 10px 0px black;
     margin-left: 2%;
     margin-right: 1%;
     border-radius: 5px;
-    transition: all 2s ease-in-out;
+    transition: all 3s ease-in-out;
+    &:hover{
+        transform: rotateY(360deg);
+    }
 }
 
-.producto__item:hover{
-    transform: rotateY(360deg);
-}
 
-.item__uno{
-    grid-column: 1/2;
-    grid-row: 1/2;
+
+
+.producto__opciones{
+    font-weight: $ancho-letra;
+    font-family: $font-secundario;
+    color: white;
 }
 
 

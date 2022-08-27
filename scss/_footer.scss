@@ -15,7 +15,8 @@ footer{                        /* FOOTER*/
                 font-size: 20px;
                 text-align: center;
                 padding: 16px;
-                
+                font-family: $font-secundario;
+                font-weight: $ancho-letra;
             
             }
             
@@ -39,8 +40,6 @@ footer{                        /* FOOTER*/
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
-/*                 grid-column:   1/2 ;
-                grid-row: 1/2; */
             }
             
             
@@ -57,6 +56,11 @@ footer{                        /* FOOTER*/
             &__redes{
                 width: 40px;
             
+            }
+
+            &__visita{
+                font-family: $font-secundario;
+                font-weight: $ancho-letra;
             }
     }
 

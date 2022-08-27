@@ -54,7 +54,7 @@
     }
 }
 .portada__subtitulo:hover{
-    font-weight: bold;
+    font-weight: $ancho-letra;
 
 }
 
@@ -65,8 +65,8 @@ p{
     padding-right: 16px;
     font-family: $font-secundario;
     text-align: center;
-    font-weight: bold;
-    
+    font-weight: $ancho-letra;
+    text-shadow: 1px 2px 1px white;
 }
     @import "media";
 

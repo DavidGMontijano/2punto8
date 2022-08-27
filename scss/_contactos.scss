@@ -17,8 +17,17 @@
     }
 
 }
+
+.contacto__lista{
+    font-family: $font-secundario;
+    font-weight: $ancho-letra;
+}
+
+
 .contacto__subtitulo{
     text-align: center;
+    font-family: $font-secundario;
+    font-weight: $ancho-letra;
 }
 
 
@@ -56,27 +65,29 @@
     margin-bottom: 25px;
     color: rgb(223, 145, 145);
     text-shadow: 1px 2px 1px black;
-    font-weight: bold;
+    font-weight: $ancho-letra;
 
 }
 
-.articulo-form{
+.articulo-form{                              /* fondo formulario */
     background-image: url('../recursos/formulario-imagen.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 3px 3px 3px black;
+    box-shadow:1px 10px 25px black;
+    border-bottom-right-radius:25px;
+    border-bottom-left-radius: 25px;
 }
 
 .contacto__selector{
-    font-weight: bold;
     box-shadow: 3px 3px 3px black;
-
+    font-family: $font-secundario;
+    font-weight: $ancho-letra;
 
 }
-.contacto__check{
-        box-shadow: 3px 3px 3px black;
 
+.contacto__check{
+    box-shadow: 3px 3px 3px black;
 
 }
 .contacto__input{
