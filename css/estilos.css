@@ -54,7 +54,8 @@
   background: black;
   background: linear-gradient(to top, black, grey, #a19f9f);
   text-align: center;
-  transition: .3s; }
+  transition: .3s;
+  box-shadow: 3px 2px 1px #df9191; }
   .contacto__boton:hover {
     width: 300px;
     height: 40px; }
@@ -440,38 +441,36 @@ p {
     grid-row: auto;
     height: 50px;
     width: 100%; }
-  .nosotros__presentacion {
-    overflow: hidden; }
-    .nosotros__presentacion .nosotros__item--uno {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--uno:hover {
-        transform: scale(1.8) translate(24%);
-        filter: brightness(100%); }
-    .nosotros__presentacion .nosotros__item--dos {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--dos:hover {
-        transform: scale(2.6) translate(35%);
-        filter: brightness(100%); }
-    .nosotros__presentacion .nosotros__item--tres {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--tres:hover {
-        transform: scale(1.8) translate(-22%);
-        filter: brightness(100%); }
-    .nosotros__presentacion .nosotros__item--cuatro {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--cuatro:hover {
-        transform: scale(2.8) translate(-27%);
-        filter: brightness(100%); }
-    .nosotros__presentacion .nosotros__item--cinco {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--cinco:hover {
-        transform: scale(1.8) translatex(26%);
-        filter: brightness(100%); }
+  .nosotros__presentacion .nosotros__item--uno {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--uno:hover {
+      transform: scale(1.8) translate(24%);
+      filter: brightness(100%); }
+  .nosotros__presentacion .nosotros__item--dos {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--dos:hover {
+      transform: scale(2.6) translate(35%);
+      filter: brightness(100%); }
+  .nosotros__presentacion .nosotros__item--tres {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--tres:hover {
+      transform: scale(1.8) translate(-22%);
+      filter: brightness(100%); }
+  .nosotros__presentacion .nosotros__item--cuatro {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--cuatro:hover {
+      transform: scale(2.8) translate(-27%);
+      filter: brightness(100%); }
+  .nosotros__presentacion .nosotros__item--cinco {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--cinco:hover {
+      transform: scale(1.8) translatex(26%);
+      filter: brightness(100%); }
   footer {
     /* FOOTER*/
     display: grid;
@@ -557,35 +556,33 @@ p {
     grid-row: auto;
     height: 50px;
     width: 100%; }
-  .nosotros__presentacion {
-    overflow: hidden; }
-    .nosotros__presentacion .nosotros__item--uno {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--uno:hover {
-        transform: scale(1.8) translate(24%);
-        filter: brightness(100%); }
-    .nosotros__presentacion .nosotros__item--dos {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--dos:hover {
-        transform: scale(2.6) translate(35%);
-        filter: brightness(100%); }
-    .nosotros__presentacion .nosotros__item--tres {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--tres:hover {
-        transform: scale(1.8) translate(-22%);
-        filter: brightness(100%); }
-    .nosotros__presentacion .nosotros__item--cuatro {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--cuatro:hover {
-        transform: scale(2.8) translate(-27%);
-        filter: brightness(100%); }
-    .nosotros__presentacion .nosotros__item--cinco {
-      object-fit: cover;
-      transition: 3s; }
-      .nosotros__presentacion .nosotros__item--cinco:hover {
-        transform: scale(1.8) translatex(26%);
-        filter: brightness(100%); } }
+  .nosotros__presentacion .nosotros__item--uno {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--uno:hover {
+      transform: scale(1.8) translate(24%);
+      filter: brightness(100%); }
+  .nosotros__presentacion .nosotros__item--dos {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--dos:hover {
+      transform: scale(2.6) translate(35%);
+      filter: brightness(100%); }
+  .nosotros__presentacion .nosotros__item--tres {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--tres:hover {
+      transform: scale(1.8) translate(-22%);
+      filter: brightness(100%); }
+  .nosotros__presentacion .nosotros__item--cuatro {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--cuatro:hover {
+      transform: scale(2.8) translate(-27%);
+      filter: brightness(100%); }
+  .nosotros__presentacion .nosotros__item--cinco {
+    object-fit: cover;
+    transition: 3s; }
+    .nosotros__presentacion .nosotros__item--cinco:hover {
+      transform: scale(1.8) translatex(26%);
+      filter: brightness(100%); } }
